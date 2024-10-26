@@ -12,7 +12,7 @@ export default function Hero(){
                         <img src={imageOne} alt="" className="bg-cover h-[380px] w-[380px]" style={{ backgroundImage: `url(${componentImage})`,backgroundRepeat:"no-repeat" }}/>
            
             </div>
- 
+          
         </div>
     )
 }
