@@ -11,9 +11,9 @@ export default function Navbar() {
     };
 
     const handleScroll = () => {
-        // Calculate blur intensity based on scroll position (increases with scroll depth)
+       
         const scrollPosition = window.scrollY;
-        const maxBlur = 16; // Adjust maximum blur value as desired
+        const maxBlur = 100; 
         setBlurIntensity(Math.min(scrollPosition / 100 * maxBlur, maxBlur));
     };
 
@@ -43,10 +43,10 @@ export default function Navbar() {
                 <div className="flex items-center max-w-7xl w-full px-6 justify-between md:justify-center md:gap-36 ">
                     <h1 className="text-[#4D2F76] text-[24px] font-semibold">Guardia</h1>
                     
-                    {/* Hamburger Icon for small screens */}
+                   
                     <FaBars className="md:hidden text-[#4D2F76] text-2xl cursor-pointer" onClick={toggleMenu} />
                     
-                    {/* Navbar Links */}
+                  
                     <div className={`fixed inset-0 bg-[#1e1e1e] flex flex-col items-center justify-center gap-10 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} md:transform-none md:static md:flex md:flex-row md:gap-36`}>
                         <button className="absolute top-4 right-4 text-2xl md:hidden text-white" onClick={toggleMenu}>
                             <FaTimes />
@@ -64,9 +64,10 @@ export default function Navbar() {
                             ))}
                         </div>
                         
-                        <button className="border-2 border-[#4D2F76] w-[130px] text-[14px] text-white md:text-[#4D2F76] h-[40px] hover:bg-[#4D2F76] hover:text-[#C0C0C0] rounded-3xl transition-colors duration-300">
+                        <button to=" " className="border-2 border-[#4D2F76] w-[130px] text-[14px] text-white md:text-[#4D2F76] h-[40px] hover:bg-[#4D2F76] hover:text-[#C0C0C0] rounded-3xl transition-colors duration-300">
                             Start Chart
                         </button>
+                       
                     </div>
                 </div>
             </motion.div>
