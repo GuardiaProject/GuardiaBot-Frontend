@@ -1,4 +1,6 @@
+import Community from "../components/Community";
 import Features from "../components/Features";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Patners from "../components/Patners";
 import Navbar from "../components/navbar";
@@ -25,6 +27,8 @@ export default function Home() {
         <Patners/>
         <Features/>
         <Why/>
+        <Community/>
+        <Footer/>
        
         </div>
     );
